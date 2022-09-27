@@ -42,7 +42,7 @@ button {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template: minmax(155px, 300px) 5fr/ minmax(220px, 250px) 5fr;
+    grid-template: minmax(148px, 300px) 5fr/ minmax(220px, 250px) 5fr;
 }
 
 
@@ -103,10 +103,18 @@ button {
 
 .head-top, 
 .head-end {
-    margin: 20px 40px 0 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.head-top {
+    margin: 20px 40px 0 40px;
+}
+
+.head-end {
+    margin: 10px 40px 0 40px;
+    height: 80px;
 }
 
 .projects {
@@ -121,7 +129,7 @@ button {
 }
 
 .projects-right {
-    margin: 40px 20px 0 0;
+    margin: 30px 0 0 15px;
     display: grid;
     grid-template: 1fr 1fr / 1fr;
     grid-column-start: 2;
@@ -179,7 +187,7 @@ button {
 }
 
 .project-head {
-    margin: 40px 0 0 20px;
+    margin: 30px 0 0 15px;
 }
 
 .right-head {
@@ -188,6 +196,9 @@ button {
 
 
 /* Layer 5 */
+.head-top-right > p {
+    font-weight: 700;
+}
 .logo {
     height: 35px;
     width: 35px;
