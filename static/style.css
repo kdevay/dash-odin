@@ -44,7 +44,7 @@ button {
 
 
 /* layer 2 */
-.sidebar{
+.sidebar {
     background-color: rgb(106, 186, 159);
     color: white;
     padding-top: 20px;
@@ -64,18 +64,20 @@ button {
     grid-row-start: 1;
     grid-row-end: 2;
     position: relative;
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 1px 1px 2px 2px  rgb(162, 158, 153);
     display: grid;
     grid-template: .5fr 1fr / 1fr;
 }
 
-.main-content{
+.main-content {
     background-color: rgb(212, 207, 200);
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    gap: 20px;
 }
 
 
@@ -97,12 +99,34 @@ button {
     padding-left: 20px;
 } 
 
-.head-top, .head-end {
+.head-top, 
+.head-end {
     margin: 20px 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+}
+
+.projects {
+    margin: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.projects-right {
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: flex-start;
+    gap: 40px;
 }
 
 
@@ -151,6 +175,20 @@ button {
     gap: 20px;
 }
 
+.project-head {
+    margin: 40px 0 0 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template: repeat(3, minmax(150px, 250px)) / 1fr 1fr;
+    gap: 20px;
+}
+
+.right-head {
+    margin: 0 0 20px 0;
+}
+
 
 /* Layer 5 */
 .logo {
@@ -161,14 +199,26 @@ button {
     height: 20.5px;
     width: 20.5px;
 }
-/* .logo-mid {
-    height: 40px;
-    width: 40px;
-} */
+
 .logo-large {
     height: 60px;
     width: 60px;
 }
+
+.tile {
+    background-color: rgb(251, 244, 235);
+    border-left: 10px solid rgb(224, 179, 75);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.r-tile {
+    background-color: rgb(251, 244, 235);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
 /* header content */
 
 /* main content */
