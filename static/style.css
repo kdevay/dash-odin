@@ -13,6 +13,9 @@ h4 {
     font-size: 18px;
 }
 
+p{
+    font-size: 12px;
+}
 input, button {
     border-radius: 20px;
     border: none;
@@ -76,8 +79,7 @@ button {
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
-    grid-template: 1fr / 2fr 1fr;
-    gap: 20px;
+    grid-template: 1fr / 3fr 1fr;
 }
 
 
@@ -113,20 +115,20 @@ button {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 1fr;
+    gap: 20px;
 }
 
 .projects-right {
-    margin: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    align-items: stretch;
+    margin: 40px 20px 0 0;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    justify-content: flex-start;
-    gap: 40px;
+    gap: 20px;
 }
 
 
@@ -179,12 +181,6 @@ button {
     margin: 40px 0 0 20px;
 }
 
-.projects {
-    display: grid;
-    grid-template: repeat(3, minmax(150px, 250px)) / 1fr 1fr;
-    gap: 20px;
-}
-
 .right-head {
     margin: 0 0 20px 0;
 }
@@ -199,7 +195,10 @@ button {
     height: 20.5px;
     width: 20.5px;
 }
-
+.logo-mid {
+    height: 20.5px;
+    width: 29px;
+}
 .logo-large {
     height: 60px;
     width: 60px;
@@ -210,15 +209,34 @@ button {
     border-left: 10px solid rgb(224, 179, 75);
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .r-tile {
     background-color: rgb(251, 244, 235);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
+#bottom {
+    display: grid;
+    grid-template: 1fr/ 1fr 3fr;
+}
 
-/* header content */
+.smol {
+    font-size: 10px;
+}
 
-/* main content */
+.user-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
