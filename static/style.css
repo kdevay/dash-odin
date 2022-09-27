@@ -42,7 +42,7 @@ button {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template: 1fr 4fr/ minmax(220px, 250px) 5fr;
+    grid-template: minmax(155px, 300px) 5fr/ minmax(220px, 250px) 5fr;
 }
 
 
@@ -56,7 +56,7 @@ button {
     grid-row-start: 1;
     grid-row-end: 3;
     display: grid;
-    grid-template: 1fr 6fr 3fr 6fr / 1fr;
+    grid-template: 1fr 3fr 2fr 8fr / 1fr;
     gap: 50px;
 }
 
@@ -103,7 +103,7 @@ button {
 
 .head-top, 
 .head-end {
-    margin: 20px 40px;
+    margin: 20px 40px 0 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -143,7 +143,8 @@ button {
 .icons, .links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .top {
