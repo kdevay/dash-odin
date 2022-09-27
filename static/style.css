@@ -21,7 +21,16 @@ input, button {
 input {
     background-color: rgb(212, 207, 200);
     height: 30px;
-    width: 400px;
+    width: clamp(400px, 600px, 800px);
+}
+
+button {
+    color: white;
+    font-weight: 600;
+    width: 85px;
+    padding: 8px 0;
+    background-color: rgb(106, 186, 159);
+    margin: 5px;
 }
 
 
@@ -58,7 +67,7 @@ input {
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 1px 1px 2px 2px  rgb(162, 158, 153);
     display: grid;
-    grid-template: 1fr 1fr / 1fr;
+    grid-template: .5fr 1fr / 1fr;
 }
 
 .main-content{
@@ -88,8 +97,12 @@ input {
     padding-left: 20px;
 } 
 
-.header > div {
-    margin: 20px;
+.head-top, .head-end {
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 
@@ -107,10 +120,39 @@ input {
     justify-content: space-around;
 }
 
+.top {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.head-top-right {
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-end-right {
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-top-left, .head-end-left {
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
 
 /* Layer 5 */
-
-
 .logo {
     height: 35px;
     width: 35px;
@@ -119,13 +161,13 @@ input {
     height: 20.5px;
     width: 20.5px;
 }
-.logo-mid {
-    height: 28px;
-    width: 28px;
-}
+/* .logo-mid {
+    height: 40px;
+    width: 40px;
+} */
 .logo-large {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
 /* header content */
 
