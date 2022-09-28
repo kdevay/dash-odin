@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body>
     <div class="content">
-        <div class="sidebar">
+        <div id="plain" class="sidebar">
             <div class="logo-cont">
                 <img class="logo" src="static/logo.png"><h3>Dashboard</h3>
             </div>
@@ -44,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="header">
+        <div id="plain" class="header">
             <div class="head-top">
                 <div class="head-top-left">
                     <img class="logo-small" src="static/searchy.png">
@@ -72,99 +75,98 @@
             </div>
         </div>
         <div class="main-content">
-            <div class="main">
+            <!-- begin highlight below -->
+            <div class="projects">
                 <h4 class="project-head">your projects</h4>
-                <div class="projects">
-                    <div class="tile">
-                        <div>
-                            <h4>Fire</h4>
-                            <p>Through the darkness of future past, the magician longs to see. One chants out between two worlds: "Fire walk with me."</p>
-                        </div>
-                        <div>
-                            <img class="logo-mid" src="static/owl.png"> 
-                            <img class="logo-mid" src="static/evil.png"> 
-                            <img class="logo-mid" src="static/mountains.png"> 
-                        </div>
+                <div class="tile">
+                    <div>
+                        <h5>Fire</h5>
+                        <p>Through the darkness of future past, the magician longs to see. One chants out between two worlds: "Fire walk with me."</p>
                     </div>
-                    <div class="tile">
-                        <div>
-                            <h4>Woodsman</h4>
-                            <p>This is the water and this is the well. Drink full and descend. The horse is the white of the eyes, and dark within.</p>
-                        </div>
-                        <div>
-                            <img class="logo-mid" src="static/owl.png"> 
-                            <img class="logo-mid" src="static/evil.png"> 
-                            <img class="logo-mid" src="static/mountains.png"> 
-                        </div>
+                    <div class="runes">
+                        <img class="logo-mid" src="static/owl.png"> 
+                        <img class="logo-mid" src="static/evil.png"> 
+                        <img class="logo-mid" src="static/mountains.png"> 
                     </div>
-                    <div class="tile">
-                        <div>
-                            <h4>Mike</h4>
-                            <p>We lived among the people. I think you say, convenience store. We lived above it. I mean it like it is... like it sounds. I too have been touched by the devilish one. Tattoo on the left shoulder...Oh, but when I saw the face of God, I was changed. I took the entire arm off.</p>
-                        </div>
-                        <div>
-                            <img class="logo-mid" src="static/owl.png"> 
-                            <img class="logo-mid" src="static/evil.png"> 
-                            <img class="logo-mid" src="static/mountains.png"> 
-                        </div>
+                </div>
+                <div class="tile">
+                    <div>
+                        <h5>Woodsman</h5>
+                        <p>This is the water and this is the well. Drink full and descend. The horse is the white of the eyes, and dark within.</p>
                     </div>
-                    <div class="tile">
-                        <div>
-                            <h4>Coop</h4>
-                            <p>Every day, once a day, give yourself a present. Don’t plan it, don’t wait for it, just let it happen. It could be a new shirt at the men's store, a catnap in your office chair or two cups of good hot black coffee.</p>
-                        </div>
-                        <div>
-                            <img class="logo-mid" src="static/owl.png"> 
-                            <img class="logo-mid" src="static/evil.png"> 
-                            <img class="logo-mid" src="static/mountains.png"> 
-                        </div>
+                    <div class="runes">
+                        <img class="logo-mid" src="static/owl.png"> 
+                        <img class="logo-mid" src="static/evil.png"> 
+                        <img class="logo-mid" src="static/mountains.png"> 
                     </div>
-                    <div class="tile">
-                        <div>
-                            <h4>Albert</h4>
-                            <p>While I will admit to a certain cynicism, the fact is I am a naysayer and hatchet-man in the fight against violence. I pride myself in taking a punch and I'll gladly take another because I choose to live my life in the company of Gandhi and King. My concerns are global. I reject absolutely revenge, aggression and retaliation. The foundation of such a method is love. I love you Sheriff Truman.</p>
-                        </div>
-                        <div>
-                            <img class="logo-mid" src="static/owl.png"> 
-                            <img class="logo-mid" src="static/evil.png"> 
-                            <img class="logo-mid" src="static/mountains.png"> 
-                        </div>
+                </div>
+                <div class="tile">
+                    <div>
+                        <h5>Mike</h5>
+                        <p>We lived among the people. I think you say, convenience store. We lived above it. I mean it like it is... like it sounds. I too have been touched by the devilish one. Tattoo on the left shoulder...Oh, but when I saw the face of God, I was changed. I took the entire arm off.</p>
                     </div>
-                    <div class="tile">
-                        <div>
-                            <h4>Blue Rose</h4>
-                            <p>In the heat of the investigative pursuit, the shortest distance between two points is not necessarily a straight line.</p>
-                        </div>
-                        <div>
-                            <img class="logo-mid" src="static/owl.png"> 
-                            <img class="logo-mid" src="static/evil.png"> 
-                            <img class="logo-mid" src="static/mountains.png"> 
-                        </div>
+                    <div class="runes">
+                        <img class="logo-mid" src="static/owl.png"> 
+                        <img class="logo-mid" src="static/evil.png"> 
+                        <img class="logo-mid" src="static/mountains.png"> 
+                    </div>
+                </div>
+                <div class="tile">
+                    <div>
+                        <h5>Coop</h5>
+                        <p>Every day, once a day, give yourself a present. Don’t plan it, don’t wait for it, just let it happen. It could be a new shirt at the men's store, a catnap in your office chair or two cups of good hot black coffee.</p>
+                    </div>
+                    <div class="runes">
+                        <img class="logo-mid" src="static/owl.png"> 
+                        <img class="logo-mid" src="static/evil.png"> 
+                        <img class="logo-mid" src="static/mountains.png"> 
+                    </div>
+                </div>
+                <div class="tile">
+                    <div>
+                        <h5>Albert</h5>
+                        <p>While I will admit to a certain cynicism, the fact is I am a naysayer and hatchet-man in the fight against violence. I pride myself in taking a punch and I'll gladly take another because I choose to live my life in the company of Gandhi and King. My concerns are global. I reject absolutely revenge, aggression and retaliation. The foundation of such a method is love. I love you Sheriff Truman.</p>
+                    </div>
+                    <div class="runes">
+                        <img class="logo-mid" src="static/owl.png"> 
+                        <img class="logo-mid" src="static/evil.png"> 
+                        <img class="logo-mid" src="static/mountains.png"> 
+                    </div>
+                </div>
+                <div class="tile">
+                    <div>
+                        <h5>Blue Rose</h5>
+                        <p>In the heat of the investigative pursuit, the shortest distance between two points is not necessarily a straight line.</p>
+                    </div>
+                    <div class="runes">
+                        <img class="logo-mid" src="static/owl.png"> 
+                        <img class="logo-mid" src="static/evil.png"> 
+                        <img class="logo-mid" src="static/mountains.png"> 
                     </div>
                 </div>
             </div>
             <div class="projects-right">
+                <h4 class="announce-head">announcements</h4>
                 <div class="announcements">
-                    <h4 class="right-head">announcements</h4>
                     <div class="r-tile">
                         <div>
                             <h6>Tibetan Pitch</h6>
                             <p class="smol">Following a dream I had three years ago, I realized that I had subconsciously gained knowledge of a deductive technique, involving mind-body coordination operating hand-in-hand with the deepest level of intuition.</p>
                         </div>
-                        <hr style="width:100%;text-align:center;">
+                        <hr>
                         <div>
                             <h6>Major Vision</h6>
                             <p class="smol">Fresh and clear as a mountain stream — the mind revealing itself to itself. There seemed to emanate from it a light. We embraced. A warm and loving embrace, nothing withheld. We were in this moment one.</p>
                         </div>
-                        <hr style="width:100%;text-align:center;">
+                        <hr>
                         <div>
                             <h6>Harold's Journal</h6>
                             <p class="smol">Are you looking for secrets? Is that it? Maybe I can give you one. Do you want to know what the ultimate secret is? Laura did. There are things you can't get anywhere… but we dream they can be found in other people.</p>
                         </div>
                     </div>
-                </div>
+                </div> 
+                <h4 class="trend-head">trending</h4>
                 <div class="trending">
-                    <h4 class="right-head">trending</h4>
                     <div id="bottom" class="r-tile">
                         <div class="users">
                             <img class="logo" src="static/laura.png">
@@ -193,6 +195,7 @@
                     </div>
                 </div>
             </div>
+            <!-- end highlight above -->
         </div>
     </div>
 </body>
