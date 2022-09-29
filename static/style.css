@@ -60,7 +60,8 @@ button {
 
 /* layer 2 */
 .sidebar {
-    width: 100%;
+    width: 20%;
+    position: fixed;
     background-color: rgb(106, 186, 159);
     color: white;
     padding-top: 20px;
