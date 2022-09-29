@@ -23,8 +23,9 @@ h4 {
 }
 
 p{
-    font-size: 12px;
+    font-size: 14px;
 }
+
 input, button {
     border-radius: 20px;
     border: none;
@@ -311,7 +312,7 @@ button {
 }
 
 .smol {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .user-icons {
