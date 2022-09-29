@@ -52,7 +52,7 @@ button {
     background-color: rgb(212, 207, 200);
     width: 100%;
     display: grid;
-    grid-template: 148px 1fr/ 15% 85%;
+    grid-template: 148px 1fr/ 20% 80%;
 }
 
 
@@ -116,7 +116,7 @@ button {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
-    gap: 1vh;
+    gap: 1vw;
     padding-left: 2vw;
 }
 
